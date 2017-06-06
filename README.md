@@ -32,9 +32,15 @@ __2. Install Dependencies__
 ## Endpoints
 
 POST /api/v1/urls
-
    Create a shortened url
-
+GET /api/v1/urls
+    Display all urls
+GET /api/v1/urls/:id
+    Display URL based upon id
+POST /api/v1/urls/:id
+    Update URL based upon id
+DELETE  /api/v1/urls/:id
+    Delete url based upon id
 
 
 ## Tests to be used at a later time    

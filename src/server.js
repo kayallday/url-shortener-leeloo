@@ -10,7 +10,7 @@ app.use(body_parser.urlencoded({
 }));
 
 // url
-app.use('/api/v1', require('../routes/api.js')(express));
+app.use('/api/v1', require('./routes/api.js')(express));
 
 // configgy
 var port = process.env.PORT || 3000;
