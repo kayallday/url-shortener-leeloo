@@ -1,0 +1,16 @@
+{
+  "name": "url-shortener-leeloo",
+  "version": "1.0.0",
+  "description": "Leeloo Minai Lekarariba-Laminai-Tchai Ekbat De Sebat. Shortening the URL's for Corbin Dallas.",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "supertest": "^3.0.0"
+  }
+}
