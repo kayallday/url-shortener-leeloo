@@ -13,7 +13,7 @@ __Utility Tool__
 A tool for Debugging
 
 __St-st-st-style Guide Girl!__
-style_guide
+>>>>>>> style_guide
 
 ## Installation
 __Steps__
@@ -44,7 +44,6 @@ __eslint packages__
     npm install --save-dev eslint-plugin-jsx-a11y
 
 Also intall the linter-eslint package inside the settings in Atom
-
 
 __Utility Tool__
 
