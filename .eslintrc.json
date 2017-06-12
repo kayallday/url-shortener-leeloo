@@ -1,6 +1,9 @@
 {
+  "env": {
+    "node": true
+  },
   "extends": "airbnb",
-  "plugins": [
+  "plgins": [
     "react",
     "jsx-a11y",
     "import"
