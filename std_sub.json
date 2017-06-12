@@ -1,7 +1,7 @@
 {
   "author_last_name": "Beard",
   "github_public_repo_link": "https://github.com/kmbeard/url-shortener-leeloo",
-  "github_tagged_commit_link": "https://github.com/kmbeard/url-shortener-leeloo/releases/tag",
-  "tagged_version": "v1.3.0",
-  "comments": "Cannot figure out why the debug tool isn't working."
+  "github_tagged_commit_link": "https://github.com/kmbeard/url-shortener-leeloo/tags",
+  "tagged_version": "v1.4.0",
+  "comments": "Refactored to look like airbnb."
 }
