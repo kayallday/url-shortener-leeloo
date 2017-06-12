@@ -1,7 +1,7 @@
-var Sequelize = require('sequelize');
-if (!process.env.NODE_ENV) require('dotenv').config();
+const Sequelize = require('sequelize');
+require('dotenv').config();
 
-var sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASS, {
+const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASS, {
   host: process.env.DB_HOST,
   dialect: process.env.DB_SCHEMA,
   port: process.env.DB_PORT,
@@ -16,7 +16,7 @@ var sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.
 });
 
 // Create le tables
-var url = sequelize.define('url', {
+const url = sequelize.define('url', {
   name: {
     type: Sequelize.STRING,
   },
@@ -25,7 +25,7 @@ var url = sequelize.define('url', {
   },
   shortenedUrl: {
     type: Sequelize.STRING,
-  },
+  }
 });
 
 sequelize.sync();
