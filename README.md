@@ -13,7 +13,7 @@ __Utility Tool__
 A tool for Debugging
 
 __St-st-st-style Guide Girl!__
->>>>>>> style_guide
+style_guide
 
 ## Installation
 __Steps__
@@ -49,11 +49,6 @@ Also intall the linter-eslint package inside the settings in Atom
 __Utility Tool__
 
     npm install debug_tool
-
-
-__To run in debug mode, you must run:__
-
-    $ git DEBUG=true nodemon src/server.js
 
 ## Endpoints
 
