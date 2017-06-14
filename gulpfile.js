@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const git = require('gulp-git');
 const argv = require('yargs').argv;
 
-//add task
+// add task
 gulp.task('addAll', function() {
 
   // allllllll the sources of alllll the files
@@ -10,8 +10,10 @@ gulp.task('addAll', function() {
     .pipe(git.add());
 });
 
+// add task
 gulp.task('commit', function() {
 
+// commit source of files
   return gulp.src('./gulpfile.js')
   .pipe(git.commit('auto Commit message...loading'));
 });
