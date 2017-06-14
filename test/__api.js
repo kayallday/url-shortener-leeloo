@@ -1,7 +1,7 @@
-var request = require('supertest');
+const request = require('supertest');
 
 describe('API', function(){
-  var server;
+  const server;
 
   beforeEach(function (){
     server = require('../src/server.js');
@@ -28,7 +28,7 @@ describe('API', function(){
   });
 
     it('/status should return specified object.', function testhealth(done) {
-        var fakeUrl = "www.google.com";
+        const fakeUrl = "www.google.com";
         request(server)
         .get('/api/urls/' + fakeUrl)
         .set('Accept', 'application/json')
