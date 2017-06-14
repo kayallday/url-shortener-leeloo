@@ -4,7 +4,9 @@
   "description": "Leeloo Minai Lekarariba-Laminai-Tchai Ekbat De Sebat. Shortening the URL's for Corbin Dallas.",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon scrc/server.js",
+    "utility_debug_tool": "DEBUG=true nodemon src/server.js",
+    "test": "mocha"
   },
   "keywords": [
     "API, Node"

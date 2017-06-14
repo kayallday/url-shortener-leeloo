@@ -6,10 +6,10 @@ module.exports = function (express) {
 
   // url head
   router.post('/urls', function (req, res) {
-    const origUrl = req.body.orginalUrl;
+    const origURL = req.body.orginalUrl;
 
     // source string and total chars
-    const sourceString = 'ABCDEFGHIJKLMNOPQRSTUVabcdefghijklmnopqrstuvwxyz123456789';
+    const sourceString = 'ABCDEFGHIJKLMNOPQRSTUVabcdefghijklmnopqrstuvwxyz23456789';
     const totalChars = 8;
 
     // build upon string
@@ -17,13 +17,13 @@ module.exports = function (express) {
 
     for (const i = 0; i < totalChars; i++) {
       // randomly picked chars added
-      buildUrl += sourceString.charAt(Math.random() * sourceString.length);
+      buildURL += sourceString.charAt(Math.random() * sourceString.length);
     }
 
     // return resonse to buildUrl
     const pkgUrl = {
-      origUrl: origUrl,
-      shortenedUrl: buildUrl,
+      origURL: origURL,
+      shortURL: buildURL,
     };
 
     res.json(pkgUrl);

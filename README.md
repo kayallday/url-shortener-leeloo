@@ -1,19 +1,52 @@
 # Leeloo-url-shortener
 
+  Shortening all the urls for Corbin Dallas.
+
 ## Pre-requisites
-It is _HIGHLY_ recommended you have the following installed prior to beginning the Installation steps:
+
+_Or highly effective tools that were used to during the creation of this app that I thought you should definitely have._
+
+It is _HIGHLY_ recommended (no seriously just do it okay?) you have the following installed prior to beginning the Installation steps:
 
 * [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH) - because who doesn't like efficiency (bonus: it's pretty)
 * [Homebrew](https://brew.sh/) - if your using MAC you already know
 * [NVM Node Version Manager](https://github.com/creationix/nvm/blob/master/README.md) - self explanatory
 * [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/) - preferred text editor for this particular project
+* Nodemon - efficiency remember?
+
+      npm install nodemon
 
 ## Features
+
 __Utility Tool__
-A tool for Debugging
+
+A tool for Debugging, see Running running and running running to run the app with the Utility Debug Tool
 
 __St-st-st-style Guide Girl!__
->>>>>>> style_guide
+
+
+Atom is the recommended IDE, as it supports the latest ESLint plugin, which you will need.  
+<img src="views/images/atom.png" alt="atom"> <br/>
+
+__eslint packages__
+Install the eslint packages by running the following in your favorite cli
+
+    npm i --save-dev eslint
+    npm i --save-dev eslint-config-airbnb
+    npm i --save-dev eslint-plugin-import
+    npm i --save-dev eslint-plugin-react
+    npm i --save-dev eslint-plugin-jsx-a11y
+
+
+Also install in the IDE the linter-eslint package which allows each file to lint. With Atom it is in the settings section.
+
+
+## Le Branches
+
+### Workflow
+
+Create a new feature branch, merge feature branch to master branch, create a new tag and merge the master branch into the release branch
+
 
 ## Installation
 __Steps__
@@ -35,19 +68,25 @@ __2. Install Dependencies__
 
     npm install -d
 
-__eslint packages__
-
-    npm install --save-dev eslint
-    npm install --save-dev eslint-plugin-react
-    npm install --save-dev eslint-config-airbnb
-    npm install --save-dev eslint-plugin-import
-    npm install --save-dev eslint-plugin-jsx-a11y
-
-Also intall the linter-eslint package inside the settings in Atom
 
 __Utility Tool__
 
     npm install debug_tool
+
+
+## Running running and running running
+### To run the api:
+
+__With the debug Tool__
+
+Run the following in your favorite cli (inside of the project folder _obviously_)
+
+    DEBUG=true nodemon src/server.js
+
+__Without the debug Tool__
+
+    nodemon src/server.js
+
 
 ## Endpoints
 
