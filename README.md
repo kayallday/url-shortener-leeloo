@@ -12,9 +12,9 @@ It is _HIGHLY_ recommended (no seriously just do it okay?) you have the followin
 * [Homebrew](https://brew.sh/) - if your using MAC you already know
 * [NVM Node Version Manager](https://github.com/creationix/nvm/blob/master/README.md) - self explanatory
 * [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/) - preferred text editor for this particular project
-* Nodemon - efficiency remember?
+* [Nodemon](https://nodemon.io/) - efficiency remember? Nodemon monitors for any changes in the source and automatically restarts the server. Run the command in the cli or visit the link
 
-      npm install nodemon
+      npm install -g nodemon
 
 ## Features
 
