@@ -10,6 +10,7 @@ module.exports = (express) => {
       util.debug('Error: Someone tried accessing all urls', err, 'error');
       res.status(500).json(err);
     }), (data) => {
+      util.debug('Someone accessed all urls', data, 'success');
       res.status(200).json(data);
     });
   });
