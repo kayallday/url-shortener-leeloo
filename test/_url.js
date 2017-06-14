@@ -2,7 +2,7 @@ const expect = require('chai').expect;
 const url = require('../src/models/url');
 const util = require('../lib/util');
 
-let testUrl  {};
+let testUrl = {};
 
 describe('Url Routes', () => {
   // Before each testUrl
@@ -10,7 +10,7 @@ describe('Url Routes', () => {
     const mockUrl = {
       name: 'Kelsey',
       longurl: 'www.google.com',
-      shortUrl: '',
+      shorturl: '',
     };
 
     url.create(mockUrl, (error) => {
@@ -59,7 +59,7 @@ describe('Url Routes', () => {
     it('Should be able to Update', (done) => {
       const updateInfo = {
         id: testUrl.id,
-        name: 'Kevin',
+        name: 'Acacia',
       };
       url.update(updateInfo, (err) => util.debug('failed to update', err),
       (updatedDbUrl) => {
