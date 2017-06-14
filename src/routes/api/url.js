@@ -1,29 +1,16 @@
-const url = require('../../models/url.js')
-const utilityDebugTool = require('utility_debug_tool')
+const url = require('../../models/url.js');
+const util = require('../../../lib/util.js');
 
 module.exports = (express) => {
   const router = express.Router();
 
-  router.get('/urls', (req, res) => {
-    res.json({
-      healthy: true,
-    })
-  });
-
-  //create
-  router.post('/urls', (req, res) => {
-    url.create(req.body, (err) => {
-      res.status(500).json(err);
-    }), (data) => {
-      res.status(200).json(data);
-    };
-  });
-
-  //ALL urls
+  // create
   router.get('/urls', (req, res) => {
     url.findAll(((err) => {
+      util.debug('Error: Someone tried accessing all urls', err, 'error');
       res.status(500).json(err);
     }), (data) => {
+      util.debug('Someone accessed all urls', data, 'success');
       res.status(200).json(data);
     });
   });
@@ -33,7 +20,8 @@ module.exports = (express) => {
     req.body.id = req.params.id;
     url.find(req.body, (err) => {
       res.status(500).json(err);
-    }), (data) => {
+    }, (data) => {
+      util.debug('Someone accessed one url', data);
       res.status(200).json(data);
     });
   });
@@ -43,7 +31,7 @@ module.exports = (express) => {
     req.body.id = req.params.id;
     url.destroy(req.body, (err) => {
       res.status(500).json(err);
-    }), (data) => {
+    }, (data) => {
       res.status(200).json(data);
     });
   });
@@ -53,10 +41,10 @@ module.exports = (express) => {
     req.body.id = req.params.id;
     url.update(req.body, (err) => {
       res.status(500).json(err);
-    }), (data) => {
+    }, (data) => {
       res.status(200).json(data);
     });
   });
 
   return router;
-}
+};

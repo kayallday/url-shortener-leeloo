@@ -1,7 +1,7 @@
-const request = require('supertest');
+var request = require('supertest');
 
 describe('API', function(){
-  const server;
+  var server;
 
   beforeEach(function (){
     server = require('../src/server.js');
@@ -11,7 +11,7 @@ describe('API', function(){
     server.close();
   });
 
-  it('/ should return specified object.',function testhealth(done){
+  it('/ should return specified object.', function testhealth(done) {
         request(server)
         .get('/api/')
         .set('Accept', 'application/json')
@@ -19,7 +19,7 @@ describe('API', function(){
         .expect(200, { hello: "world"} ,done);
   });
 
-    it('/status should return specified healthy:true.', function testhealth(done){
+    it('/status should return specified healthy:true.', function testhealth(done) {
         request(server)
         .get('/api/v1')
         .set('Accept', 'application/json')
@@ -27,8 +27,8 @@ describe('API', function(){
         .expect(200, { healthy: "true"} ,done);
   });
 
-    it('/status should return specified object.', function testhealth(done){
-        const fakeUrl = "www.google.com";
+    it('/status should return specified object.', function testhealth(done) {
+        var fakeUrl = "www.google.com";
         request(server)
         .get('/api/urls/' + fakeUrl)
         .set('Accept', 'application/json')

@@ -4,7 +4,9 @@
   "description": "Leeloo Minai Lekarariba-Laminai-Tchai Ekbat De Sebat. Shortening the URL's for Corbin Dallas.",
   "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon scrc/server.js",
+    "utility_debug_tool": "DEBUG=true nodemon src/server.js",
+    "test": "mocha"
   },
   "keywords": [
     "API, Node"
@@ -26,6 +28,11 @@
     "body-parser": "^1.17.2",
     "chai": "^4.0.2",
     "dotenv": "^4.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
     "expect": "^1.20.2",
     "gulp": "^3.9.1",
     "mocha": "^3.10.10",
