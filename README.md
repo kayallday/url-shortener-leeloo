@@ -18,10 +18,6 @@ It is _HIGHLY_ recommended (no seriously just do it okay?) you have the followin
 
 ## Features
 
-__Utility Tool__
-
-A tool for Debugging, see Running running and running running to run the app with the Utility Debug Tool
-
 __St-st-st-style Guide Girl!__
 
 
@@ -77,16 +73,13 @@ __Utility Tool__
 ## Running running and running running
 ### To run the api:
 
-__With the debug Tool__
-
 Run the following in your favorite cli (inside of the project folder _obviously_)
-
-    DEBUG=true nodemon src/server.js
-
-__Without the debug Tool__
 
     nodemon src/server.js
 
+__Debugging : using the debug Tool__
+
+    DEBUG=true nodemon src/server.js
 
 ## Endpoints
 

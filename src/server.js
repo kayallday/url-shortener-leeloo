@@ -1,7 +1,7 @@
 // define dependencies
 const express = require('express');
 const bodyParser = require('body-parser');
-const util = require('../lib/util');
+const utilityDebugTool = require('kay_beard_utility_debug_tool');
 
 const app = express();
 
@@ -16,6 +16,8 @@ app.use('/api/v1', require('./routes/api.js')(express));
 // configgy
 const port = process.env.PORT || 3000;
 
-exports.server = app.listen(port, () => {
-  util.debug('Server is running on', port);
+const server = app.listen(port, function() {
+  console.log('Server is running on', port);
 });
+
+module.exports = server;
