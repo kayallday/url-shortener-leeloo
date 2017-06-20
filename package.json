@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "nodemon scrc/server.js",
-    "utility_debug_tool": "DEBUG=true nodemon src/server.js",
+    "utility_debug_tool": "DEBUG=true nodemon src/serve",
     "test": "mocha"
   },
   "keywords": [
