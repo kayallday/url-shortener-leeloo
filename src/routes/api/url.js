@@ -1,5 +1,5 @@
 const url = require('../../models/url.js');
-const util = require('../../../lib/util.js');
+const utilityDebugTool = require('kay_beard_utility_debug_tool');
 
 module.exports = (express) => {
   const router = express.Router();
@@ -7,10 +7,8 @@ module.exports = (express) => {
   // create
   router.get('/urls', (req, res) => {
     url.findAll(((err) => {
-      util.debug('Error: Someone tried accessing all urls', err, 'error');
       res.status(500).json(err);
     }), (data) => {
-      util.debug('Someone accessed all urls', data, 'success');
       res.status(200).json(data);
     });
   });
@@ -21,7 +19,6 @@ module.exports = (express) => {
     url.find(req.body, (err) => {
       res.status(500).json(err);
     }, (data) => {
-      util.debug('Someone accessed one url', data);
       res.status(200).json(data);
     });
   });

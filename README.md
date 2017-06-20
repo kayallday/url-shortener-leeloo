@@ -18,10 +18,6 @@ It is _HIGHLY_ recommended (no seriously just do it okay?) you have the followin
 
 ## Features
 
-__Utility Tool__
-
-A tool for Debugging, see Running running and running running to run the app with the Utility Debug Tool
-
 __St-st-st-style Guide Girl!__
 
 
