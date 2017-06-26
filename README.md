@@ -114,3 +114,9 @@ __Run Tests__
 In the command line run the command:
 
     mocha
+
+
+## Deployment
+
+In order to deploy the server, you will need to be in terminal and type in "ssh root@104.131.115.63" this will open up the server and then type node src/server.js and the server should then be running.
+Now go into your browser and type "http://104.131.115.63/" This should be where the server is running. 
