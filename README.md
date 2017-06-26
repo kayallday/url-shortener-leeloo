@@ -4,7 +4,7 @@
 
 ## Pre-requisites
 
-_Or highly effective tools that were used to during the creation of this app that I thought you should definitely have._
+_Or highly effective tools that were used to during the creation of this app that I thought you should deefinitely have._
 
 It is _HIGHLY_ recommended (no seriously just do it okay?) you have the following installed prior to beginning the Installation steps:
 
